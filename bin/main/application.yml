@@ -1,0 +1,49 @@
+spring: 
+  application:
+    name: SpringBootJdbc
+  datasource:
+    global:
+      jdbc-url: jdbc:mysql://10.25.20.206:3306/doz3_global_gl33_r1?characterEncoding=UTF-8&serverTimezone=Asia/Seoul
+      username: doz2
+      password: test1324
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    user1:
+      jdbc-url: jdbc:mysql://10.25.20.206:3306/doz3_user_gl33_r1_1?characterEncoding=UTF-8&serverTimezone=Asia/Seoul
+      username: doz2
+      password: test1324
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    user2:
+      jdbc-url: jdbc:mysql://10.25.20.206:3306/doz3_user_gl33_r1_2?characterEncoding=UTF-8&serverTimezone=Asia/Seoul
+      username: doz2
+      password: test1324
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    # hikari: 
+    #   pool-name: hikari-cp
+    #   maximum-pool-size: 30
+    #   minimum-idle: 2
+    #   data-source-properties: 
+    #       cachePrepStmts: true
+    #       prepStmtCacheSize: 250
+    #       prepStmtCacheSqlLimit: 2048
+    #       useServerPrepStmts: true
+  lombok:
+    data:
+      flagUsage: error
+    value:
+      flagUsage: error
+    var:
+      flagUsage: error
+    nonNull:
+      flagUsage: error
+    allArgsConstructor:
+      flagUsage: error
+    requiredArgsConstructor:
+      flagUsage: error
+    cleanup:
+      flagUsage: error
+    sneakyThrows:
+      flagUsage: error
+    synchronized:
+      flagUsage: error
+    experimental:
+      flagUsage: error
